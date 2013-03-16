@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+ 
+  
+    <!--  Button to Save The Eggs   -->
+
+    <Button
+        android:id="@+id/btnsavethepeggs"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dip"
+        android:text="Save The Eggs" />
+ 
+    <!--  Button to Fantastic feathers acitivity-->
+
+    <Button
+        android:id="@+id/btnfantasticfeathers"
+        android:layout_width="451dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dip"
+        android:text="Fantastic Feathers" />
+    
+      <!--  Button to The weapon acitivity-->
+
+    <Button
+        android:id="@+id/btntheweaponr"
+        android:layout_width="478dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dip"
+        android:text="TheWeapon" />
+
+ 
+    
+</LinearLayout>
