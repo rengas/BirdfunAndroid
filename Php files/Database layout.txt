@@ -1,0 +1,37 @@
+//Download wamp server and use php admin to create the tables
+
+User Tables
+Pid|Name |School |Age |Login Id |Password |
+CREATE TABLE users(
+pid int(11) primary key auto_increment,
+name varchar(100) not null,
+age decimal(10) not null,
+School varchar(100) not null,
+login varchar(100) not null,
+password  varchar(100) not null
+);
+Score Table
+Pid| Total| Save The Eggs| The weapons| Fantastic Feathers
+CREATE TABLE scores(
+pid int(11) primary key auto_increment,
+total decimal100) not null,
+savetheeggs decimal(20) not null,
+fantasticfeathers decimal(20) not null,
+theweapon decimal(20) not null
+);
+
+Activities for the database
+Search the database for PID and Update score to the database
+Register user to the data base.Must make sure user  Log in Id not replicated
+Search database to  sort the player score and update leader board
+Search databse sort the fantastic feather score and update it
+Search database sort the The weapon score and update it
+
+Need to know how to combine databases
+
+update total score
+update savetheeggs
+update theweapon
+update fantasticfeathers
+retrive user detail
+Register user detail

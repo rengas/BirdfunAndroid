@@ -1,43 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical"
-    android:gravity="center_horizontal">
- 
-  
-    <!--  Button to Save The Eggs   -->
-    <Button android:id="@+id/btnsavetheeggs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+      android:layout_gravity="center_horizontal"
+    >
+         		<!-- Layout for Labels -->
+     <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip"
+                android:text="Name"
+                android:textSize="17dip" />
+           <EditText
+                android:id="@+id/inputName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_marginBottom="15dip"
+                android:ems="10"
+                android:textColor="#C0C0C0"
+                android:singleLine="true" >   
+            </EditText>
+	  </LinearLayout>
+	   <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+        	  <TextView
+        	      android:layout_width="182dp"
+        	      android:layout_height="wrap_content"
+        	      android:paddingLeft="10dip"
+        	      android:paddingRight="10dip"
+        	      android:paddingTop="10dip"
+        	      android:text="Age"
+        	      
+        	      android:textSize="17dip" />
+
+	 		<EditText
+                android:id="@+id/inputAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_marginBottom="15dip"
+                android:ems="10"
+                android:textColor="#C0C0C0"
+                android:singleLine="true" >
+             <requestFocus />
+			</EditText>
+       </LinearLayout>
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip"
+                android:text="School"
+                android:textSize="17dip" />
+
+            <EditText
+                android:id="@+id/inputSchool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_marginBottom="15dip"
+                android:ems="10"
+                android:textColor="#C0C0C0"
+                android:singleLine="true" >
+
+                <requestFocus />
+            </EditText>
+   		</LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >   
+
+            <TextView
+                android:layout_width="181dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip"
+                android:text="Login"
+                android:textSize="17dip" />
+			
+            <EditText
+                android:id="@+id/inputLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_marginBottom="15dip"
+                android:ems="10"
+                android:textColor="#C0C0C0"
+                android:singleLine="true" />
+    </LinearLayout>
+      <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="183dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip"
+                android:text="Password"
+                android:textSize="17dip" />
+
+        	<EditText
+                android:id="@+id/inputPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_marginBottom="15dip"
+                android:ems="10"
+                android:textColor="#C0C0C0"
+                android:singleLine="true" />
+        
+        </LinearLayout>
+          
+  <!-- Layout for Buttons -->
+
+    <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Save The Eggs"
-        android:layout_marginTop="25dip"/>
- 
-    <!--  Button to Fantastic feathers acitivity-->
-    <Button android:id="@+id/btnfantasticfeathers"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Fantastic Feathers"
-        android:layout_marginTop="25dip"/>
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+         android:layout_weight="1" >
+
+    	 <!--  Button to Register   -->
+
+        <Button
+            android:id="@+id/btnregister"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:text="Register" />
+
+    		<!--  Button to Cancel   -->
+		<Button
+    		    android:id="@+id/btncancel"
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="wrap_content"
+    		    android:text="Cancel" />
     
-      <!--  Button to The weapon acitivity-->
-    <Button android:id="@+id/btntheweapon"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="The Weapon"
-        android:layout_marginTop="25dip"/>
-   	<!--  Button to Login Activity-->
-    
-    <Button android:id="@+id/btnlogin"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Log in"
-        android:layout_marginTop="25dip"/>
-    	<!--  Button to Login Activity-->
-    
-    <Button android:id="@+id/btnregister"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Register"
-        android:layout_marginTop="25dip"/>
+	</LinearLayout>
+		
+<!-- Layout for Main Layout -->
+
+
 </LinearLayout>
+		  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ 
