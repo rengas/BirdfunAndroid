@@ -41,24 +41,23 @@ public final class R {
         public static final int textfield_focused_holo_dark=0x7f02000d;
     }
     public static final class id {
-        public static final int action_settings=0x7f090011;
-        public static final int btncancel=0x7f090010;
-        public static final int btnfantasticfeathers=0x7f090001;
-        public static final int btnleaderboard=0x7f090006;
-        public static final int btnlogins=0x7f090004;
-        public static final int btnplays=0x7f090003;
-        public static final int btnquit=0x7f090007;
-        public static final int btnregiste=0x7f090005;
+        public static final int action_settings=0x7f090010;
+        public static final int btncancel=0x7f090003;
+        public static final int btnfantasticfeathers=0x7f09000a;
+        public static final int btnleaderboard=0x7f090007;
+        public static final int btnlogin=0x7f090002;
+        public static final int btnlogins=0x7f090005;
+        public static final int btnplays=0x7f090004;
+        public static final int btnquit=0x7f090008;
+        public static final int btnregiste=0x7f090006;
         public static final int btnregister=0x7f09000f;
-        public static final int btnsavetheeggs=0x7f090000;
-        public static final int btnsavethepeggs=0x7f090008;
-        public static final int btntheweapon=0x7f090002;
-        public static final int btntheweaponr=0x7f090009;
-        public static final int inputAge=0x7f09000b;
-        public static final int inputLogin=0x7f09000d;
-        public static final int inputName=0x7f09000a;
-        public static final int inputPassword=0x7f09000e;
-        public static final int inputSchool=0x7f09000c;
+        public static final int btnsavetheeggs=0x7f090009;
+        public static final int btntheweapon=0x7f09000b;
+        public static final int inputAge=0x7f09000d;
+        public static final int inputLogin=0x7f090000;
+        public static final int inputName=0x7f09000c;
+        public static final int inputPassword=0x7f090001;
+        public static final int inputSchool=0x7f09000e;
     }
     public static final class layout {
         public static final int login_user=0x7f030000;

@@ -18,7 +18,7 @@
         android:configChanges="keyboardHidden|orientation">
          <!-- Main Screen Activity  -->
         <activity
-            android:name=".MainScreenActivity"
+            android:name=".PlayScreenActivity"
             android:label="@string/app_name" >
            
         </activity>
@@ -40,10 +40,16 @@
             android:name=".TheWeaponActivity"
             android:label="The Weapon" >
         </activity>
-          <!-- The Weapon -->
+          <!-- Register -->
         <activity
             android:name=".RegisterActivity"
             android:label="Regiter User" >
+           
+        </activity>
+        <!-- Login -->
+        <activity
+            android:name=".LogInActivity"
+            android:label="Log in" >
              <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
  				<category android:name="android.intent.category.LAUNCHER" />

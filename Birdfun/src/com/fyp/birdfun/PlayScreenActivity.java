@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainScreenAcitivity extends Activity {
+public class PlayScreenActivity extends Activity {
 	 	Button btnSaveTheEggs;
 	    Button btnFantasticFeathers;
 	    Button btntheweapon;
@@ -14,7 +14,7 @@ public class MainScreenAcitivity extends Activity {
 	    @Override
 	    public void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
-	        setContentView(R.layout.main_screen);
+	        setContentView(R.layout.play_screen);
 	 
 	        // Buttons
 	        btnSaveTheEggs = (Button) findViewById(R.id.btnsavetheeggs);

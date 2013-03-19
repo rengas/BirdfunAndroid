@@ -77,7 +77,7 @@ public class RegisterActivity extends Activity {
         protected void onPreExecute() {
             super.onPreExecute();
             pDialog = new ProgressDialog(RegisterActivity.this);
-            pDialog.setMessage("Adding user..");
+            pDialog.setMessage("Registering user..");
             pDialog.setIndeterminate(false);
             pDialog.setCancelable(true);
             pDialog.show();
@@ -116,13 +116,11 @@ public class RegisterActivity extends Activity {
                 if (success == 1) {
                     // successfully created product
                     Intent i = new Intent(getApplicationContext(), RegisterActivity.class);
-                    startActivity(i);
- 
+                    startActivity(i);      
                     // closing this screen
                     finish();
-                } else {
-                    // failed to create product
-                }
+                } 
+                
             } catch (JSONException e) {
                 e.printStackTrace();
             }
