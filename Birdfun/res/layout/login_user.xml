@@ -70,7 +70,7 @@
             android:id="@+id/btnlogin"
             android:layout_width="152dp"
             android:layout_height="wrap_content"
-            android:text="Register" />
+            android:text="Login" />
 
     		<!--  Button to Cancel   -->
 
