@@ -21,6 +21,8 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.fyp.birdfun.helpers.JSONParser;
+import com.fyp.birdfun.helpers.PlayerDetails;
+import com.google.gson.Gson;
 
 public class LogInActivity extends Activity{
 
@@ -31,16 +33,18 @@ public class LogInActivity extends Activity{
     JSONParser jsonParser = new JSONParser();
  
     ArrayList<HashMap<String, String>> productsList;
- 
+    ArrayList<PlayerDetails> playerdata = new ArrayList<PlayerDetails>();
     // url to get all products list
     private static String url_login = "http://10.0.2.2/login_user.php";
  
     // JSON Node names
     private static final String TAG_SUCCESS = "success";
-  
- 
+    private static final String TAG_USER = "users";
+    private static final String TAG_PID = "pid";
+    private static final String TAG_NAME = "name";
+    private static final String  TAG_TOTAL="total";
     // products JSONArray
-    JSONArray products = null;
+    JSONArray users = null;
     
     //to read the content of the user input
     EditText inputLogin;
@@ -119,14 +123,32 @@ public class LogInActivity extends Activity{
      
                 // check for success tag
                 try {
-                    int success = json.getInt(TAG_SUCCESS);
-     
+                    int success = json.getInt(TAG_SUCCESS);       
                     if (success == 1) {
-                        // successfully created product
-                        Intent i = new Intent(getApplicationContext(), PlayScreenActivity.class);
-                        startActivity(i);      
-                        // closing this screen
-                        finish();
+                    // products found
+                    // Getting Array of Products
+                    users = json.getJSONArray(TAG_USER);
+                	
+                    // looping through All Products
+                    for (int i = 0; i < users.length(); i++) 
+                    {
+                    	JSONObject c = users.getJSONObject(i);
+                       // Storing each json item in player object
+                    	
+                    	PlayerDetails player=new PlayerDetails();
+                    	
+                        player.Pid = c.getInt(TAG_PID);
+                        player.Name = c.getString(TAG_NAME);
+                        
+                        playerdata.add(player);
+                       // player.Total=c.getInt(TAG_TOTAL);
+                    }
+                   
+                    Intent i = new Intent(getApplicationContext(), PlayScreenActivity.class);
+                    i.putExtra("player",playerdata);  
+                    startActivity(i);      
+                    // closing this screen
+                    finish();
                     } 
                     
                 } catch (JSONException e) {
