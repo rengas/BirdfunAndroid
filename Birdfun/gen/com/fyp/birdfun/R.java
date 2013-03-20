@@ -32,13 +32,14 @@ public final class R {
         public static final int btn_default_holo_dark=0x7f020004;
         public static final int btn_default_normal_holo_dark=0x7f020005;
         public static final int btn_default_pressed_holo_dark=0x7f020006;
-        public static final int edit_text_holo_dark=0x7f020007;
-        public static final int ic_launcher=0x7f020008;
-        public static final int textfield_activated_holo_dark=0x7f020009;
-        public static final int textfield_default_holo_dark=0x7f02000a;
-        public static final int textfield_disabled_focused_holo_dark=0x7f02000b;
-        public static final int textfield_disabled_holo_dark=0x7f02000c;
-        public static final int textfield_focused_holo_dark=0x7f02000d;
+        public static final int btn_toggle_off_focused_holo_dark=0x7f020007;
+        public static final int edit_text_holo_dark=0x7f020008;
+        public static final int ic_launcher=0x7f020009;
+        public static final int textfield_activated_holo_dark=0x7f02000a;
+        public static final int textfield_default_holo_dark=0x7f02000b;
+        public static final int textfield_disabled_focused_holo_dark=0x7f02000c;
+        public static final int textfield_disabled_holo_dark=0x7f02000d;
+        public static final int textfield_focused_holo_dark=0x7f02000e;
     }
     public static final class id {
         public static final int action_settings=0x7f090011;

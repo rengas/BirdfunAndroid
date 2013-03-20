@@ -22,7 +22,7 @@ import android.widget.EditText;
 
 import com.fyp.birdfun.helpers.JSONParser;
 import com.fyp.birdfun.helpers.PlayerDetails;
-import com.google.gson.Gson;
+ 
 
 public class LogInActivity extends Activity{
 

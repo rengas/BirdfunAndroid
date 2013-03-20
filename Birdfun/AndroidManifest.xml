@@ -15,12 +15,12 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/BirdFunTheme"  
-        android:configChanges="keyboardHidden|orientation">
+        android:configChanges="orientation">
          <!-- Main Screen Activity  -->
         <activity
             android:name=".PlayScreenActivity"
             android:label="@string/app_name" >
-           
+           	
         </activity>
  
         <!-- Save the Eggs  -->
@@ -44,16 +44,17 @@
         <activity
             android:name=".RegisterActivity"
             android:label="Regiter User" >
+                         <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+ 				<category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
            
         </activity>
         <!-- Login -->
         <activity
             android:name=".LogInActivity"
             android:label="Log in" >
-             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
- 				<category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
         
         

@@ -2,190 +2,230 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" 
-      android:layout_gravity="center_horizontal"
-    >
-         		<!-- Layout for Labels -->
-     <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal" >
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
 
-            <TextView
-                android:layout_width="185dp"
-                android:layout_height="wrap_content"
-                android:paddingLeft="10dip"
-                android:paddingRight="10dip"
-                android:paddingTop="10dip"
-                android:text="Name"
-                android:textSize="17dip" />
-           <EditText
-                android:id="@+id/inputName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dip"
-                android:layout_marginBottom="15dip"
-                android:ems="10"
-                android:textColor="#C0C0C0"
-                android:singleLine="true" >   
-            </EditText>
-	  </LinearLayout>
-	   <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal" >
+    <!-- Layout for Labels -->
 
-        	  <TextView
-        	      android:layout_width="182dp"
-        	      android:layout_height="wrap_content"
-        	      android:paddingLeft="10dip"
-        	      android:paddingRight="10dip"
-        	      android:paddingTop="10dip"
-        	      android:text="Age"
-        	      
-        	      android:textSize="17dip" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
 
-	 		<EditText
-                android:id="@+id/inputAge"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dip"
-                android:layout_marginBottom="15dip"
-                android:ems="10"
-                android:textColor="#C0C0C0"
-                android:singleLine="true" >
-             <requestFocus />
-			</EditText>
-       </LinearLayout>
-       <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="top"
+            android:alpha="0.8"
+            android:gravity="top|center"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="Enter Your Particulars"
+            android:textAlignment="viewEnd"
+            android:textSize="24dp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="174dp"
-                android:layout_height="wrap_content"
-                android:paddingLeft="10dip"
-                android:paddingRight="10dip"
-                android:paddingTop="10dip"
-                android:text="School"
-                android:textSize="17dip" />
-
-            <EditText
-                android:id="@+id/inputSchool"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dip"
-                android:layout_marginBottom="15dip"
-                android:ems="10"
-                android:textColor="#C0C0C0"
-                android:singleLine="true" >
-
-                <requestFocus />
-            </EditText>
-   		</LinearLayout>
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal" >   
-
-            <TextView
-                android:layout_width="181dp"
-                android:layout_height="wrap_content"
-                android:paddingLeft="10dip"
-                android:paddingRight="10dip"
-                android:paddingTop="10dip"
-                android:text="Login"
-                android:textSize="17dip" />
-			
-            <EditText
-                android:id="@+id/inputLogin"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dip"
-                android:layout_marginBottom="15dip"
-                android:ems="10"
-                android:textColor="#C0C0C0"
-                android:singleLine="true" />
     </LinearLayout>
-      <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal" >
 
-            <TextView
-                android:layout_width="183dp"
-                android:layout_height="wrap_content"
-                android:paddingLeft="10dip"
-                android:paddingRight="10dip"
-                android:paddingTop="10dip"
-                android:text="Password"
-                android:textSize="17dip" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="fill_horizontal"
+        android:orientation="horizontal" >
 
-        	<EditText
-                android:id="@+id/inputPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dip"
-                android:layout_marginBottom="15dip"
-                android:ems="10"
-                android:textColor="#C0C0C0"
-                android:singleLine="true" />
-        
-        </LinearLayout>
-          
-  <!-- Layout for Buttons -->
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="49dp"
+            android:layout_weight="0.55"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="Name"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:layout_weight="0.50"
+            android:background="@drawable/textfield_focused_holo_dark"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:textColor="#C0C0C0" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="fill_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="49dp"
+
+            android:layout_weight="0.55"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="Age"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/inputAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:layout_weight="0.50"
+            android:background="@drawable/textfield_focused_holo_dark"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:textColor="#C0C0C0" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="fill_horizontal"
+        android:orientation="horizontal"  >
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="49dp"
+
+            android:layout_weight="0.55"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="School"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:id="@+id/inputSchool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:layout_weight="0.50"
+            android:background="@drawable/textfield_focused_holo_dark"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:textColor="#C0C0C0" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="fill_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="49dp"
+
+            android:layout_weight="0.55"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="Login"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:id="@+id/inputLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:layout_weight="0.50"
+            android:background="@drawable/textfield_focused_holo_dark"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:textColor="#C0C0C0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="fill_horizontal"
+        android:orientation="horizontal"  >
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="49dp"
+
+            android:layout_weight="0.55"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:text="Password"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/inputPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:layout_weight="0.50"
+            android:background="@drawable/textfield_focused_holo_dark"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:textColor="#C0C0C0"/>
+    </LinearLayout>
+
+    <!-- Layout for Buttons -->
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:alpha="0.9"
+        android:animateLayoutChanges="true"
+        android:gravity="fill_horizontal"
         android:orientation="horizontal"
-         android:layout_weight="1" >
+        android:paddingLeft="@dimen/activity_vertical_margin" >
 
-    	 <!--  Button to Register   -->
+        <!-- Button to Register -->
 
         <Button
             android:id="@+id/btnregister"
-            android:layout_width="152dp"
+            android:layout_width="286dp"
             android:layout_height="wrap_content"
+            android:gravity="left"
             android:text="Register" />
 
-    		<!--  Button to Cancel   -->
-		<Button
-    		    android:id="@+id/btncancel"
-    		    android:layout_width="fill_parent"
-    		    android:layout_height="wrap_content"
-    		    android:text="Cancel" />
-    
-	</LinearLayout>
-		
-<!-- Layout for Main Layout -->
+        <!-- Button to Cancel -->
 
+        <Button
+            android:id="@+id/btncancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="Cancel" />
 
-</LinearLayout>
-		  
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    </LinearLayout>
+
+    <!-- Layout for Main Layout -->
+
+</LinearLayout>    
  
