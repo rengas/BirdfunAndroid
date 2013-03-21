@@ -25,7 +25,9 @@ public class PlayScreenActivity extends Activity {
 	        Intent intent =getIntent();
 	        
 	        Bundle bundle = intent.getExtras();
-
+             //recieve intent from login_intent
+	        if(intent.getStringExtra("id").equals("login_intent"))
+	        {
 	        playerdata =  bundle.getParcelableArrayList("player");
 	        
 	      
@@ -36,10 +38,18 @@ public class PlayScreenActivity extends Activity {
 	           newtext =(TextView)findViewById(R.id.nametag);
 		       newtext.setText(name);
 	           }
+	        }
+	        //receive intent from save the eggs
+	        
+	        //receive intent from  fantastic feathers
+	        
+	        //receive intent from the weapon
+	        
 	        // Buttons
 	        btnSaveTheEggs = (Button) findViewById(R.id.btnsavetheeggs);
 	        btnFantasticFeathers = (Button) findViewById(R.id.btnfantasticfeathers);
 	        btntheweapon = (Button) findViewById(R.id.btntheweapon);
+	     
 	        // Save The Eggs  click event
 	        btnSaveTheEggs.setOnClickListener(new View.OnClickListener() {
 	 
@@ -48,6 +58,7 @@ public class PlayScreenActivity extends Activity {
 	                // Launching All products Activity
 	                Intent i = new Intent(getApplicationContext(), SaveTheEggsActivity.class);
 	                startActivity(i);
+	                
 	 
 	            }
 	        });

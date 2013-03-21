@@ -144,9 +144,10 @@ public class LogInActivity extends Activity{
                        // player.Total=c.getInt(TAG_TOTAL);
                     }
                    
-                    Intent i = new Intent(getApplicationContext(), PlayScreenActivity.class);
-                    i.putExtra("player",playerdata);  
-                    startActivity(i);      
+                    Intent playscreen = new Intent(getApplicationContext(), PlayScreenActivity.class);
+                    playscreen.putExtra("id","login_intent");
+                    playscreen.putExtra("player",playerdata);  
+                    startActivity(playscreen);      
                     // closing this screen
                     finish();
                     } 
