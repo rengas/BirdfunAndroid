@@ -43,8 +43,8 @@ public class RegisterActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.register_user);
-        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+        setContentView(R.layout.test);
+       /* getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
         
         // Edit Text
         inputName = (EditText) findViewById(R.id.inputName);
@@ -67,14 +67,14 @@ public class RegisterActivity extends Activity {
         });
     }
  
-    /**
+    *//**
      * Background Async Task to Create new product
-     * */
+     * *//*
     class CreateNewUser extends AsyncTask<String, String, String> {
  
-        /**
+        *//**
          * Before starting background thread Show Progress Dialog
-         * */
+         * *//*
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
@@ -85,9 +85,9 @@ public class RegisterActivity extends Activity {
             pDialog.show();
         }
  
-        /**
+        *//**
          * Creating product
-         * */
+         * *//*
         protected String doInBackground(String... args) {
             String name = inputName.getText().toString();
             String age = inputAge.getText().toString();
@@ -130,13 +130,13 @@ public class RegisterActivity extends Activity {
             return null;
         }
  
-        /**
+        *//**
          * After completing background task Dismiss the progress dialog
-         * **/
+         * **//*
         protected void onPostExecute(String file_url) {
             // dismiss the dialog once done
             pDialog.dismiss();
         }
- 
+ */
     }
 }

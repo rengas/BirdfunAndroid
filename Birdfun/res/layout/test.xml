@@ -1,12 +1,42 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<SlidingDrawer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slidingDrawer"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_gravity="center_vertical"
-    android:orientation="vertical" >
+    android:content="@+id/content"
+    android:gravity="center_horizontal"
+    android:handle="@+id/handle"
+    android:orientation="horizontal"
+    android:rotation="180"
+    android:topOffset="600dp" >
 
-    <!-- Button to Save The Eggs -->
+    <LinearLayout
+        android:id="@+id/handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom" 
+        android:bottomOffset="200dp">
 
-    <Button
+        <ImageView
+            android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:rotation="180"
+            android:src="@drawable/ic_launcher" />
+
+    </LinearLayout>
+
+	       <LinearLayout
+	           android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	           android:gravity="top|end"
+	           android:orientation="vertical"
+	           android:rotation="180" >
+	
+	    <!-- Button to Save The Eggs -->
+	
+  <Button
         android:id="@+id/btnplays"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -53,5 +83,6 @@
         android:layout_weight="1"
         android:gravity="center"
         android:text="Quit" />
-
-</LinearLayout>
+	
+	</LinearLayout>
+</SlidingDrawer>
